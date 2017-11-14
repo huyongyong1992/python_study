@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c53b360-1f55-4908-b5e0-346197466dfb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PIL_study/Image.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmlParse_study/beautifulSoup.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmlParse_study/lianjia.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmlParse_study/lianjia_zufang.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmlParse_study/spider.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lianjia.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lianjia.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/链家.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/star2.jpg" afterPath="$PROJECT_DIR$/images/star2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/star3.jpg" afterPath="$PROJECT_DIR$/images/star3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmlParse_study/download_img.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connecMysql.py" afterPath="$PROJECT_DIR$/connecMysql.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageChops.py" afterPath="$PROJECT_DIR$/PIL_study/ImageChops.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pillow.py" afterPath="$PROJECT_DIR$/PIL_study/pillow.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,23 +14,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="connecMysql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connecMysql.py">
+      <file leaf-file-name="download_img.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htmlParse_study/download_img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-588">
-              <caret line="5" column="20" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htmlParse_study/spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="105" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="105" />
+            <state relative-caret-position="693">
+              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="35" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#9#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,33 +30,9 @@
         <entry file="file://$PROJECT_DIR$/htmlParse_study/lianjia.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="19" column="73" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="73" />
+              <caret line="19" column="73" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="73" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lianjia_zufang.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/htmlParse_study/lianjia_zufang.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-355">
-              <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="douban.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/douban.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-351">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="23" />
-              <folding>
-                <element signature="e#14#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,6 +57,7 @@
       <find>openpyxl</find>
       <find>sleep</find>
       <find>download_page</find>
+      <find>get_list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +84,7 @@
         <option value="$PROJECT_DIR$/connecMysql.py" />
         <option value="$PROJECT_DIR$/htmlParse_study/lianjia.py" />
         <option value="$PROJECT_DIR$/htmlParse_study/lianjia_zufang.py" />
+        <option value="$PROJECT_DIR$/htmlParse_study/download_img.py" />
       </list>
     </option>
   </component>
@@ -172,8 +128,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lianjia_zufang">
+  <component name="RunManager" selected="Python.download_img">
     <configuration name="beautifulSoup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -227,6 +183,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/connecMysql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="download_img" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/htmlParse_study" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/htmlParse_study/download_img.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -265,37 +238,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/htmlParse_study" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/htmlParse_study/spider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.beautifulSoup" />
       <item index="1" class="java.lang.String" itemvalue="Python.connecMysql" />
-      <item index="2" class="java.lang.String" itemvalue="Python.spider" />
-      <item index="3" class="java.lang.String" itemvalue="Python.lianjia" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lianjia_zufang" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lianjia" />
+      <item index="3" class="java.lang.String" itemvalue="Python.lianjia_zufang" />
+      <item index="4" class="java.lang.String" itemvalue="Python.download_img" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lianjia_zufang" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lianjia" />
-        <item index="2" class="java.lang.String" itemvalue="Python.connecMysql" />
-        <item index="3" class="java.lang.String" itemvalue="Python.beautifulSoup" />
-        <item index="4" class="java.lang.String" itemvalue="Python.spider" />
+        <item index="0" class="java.lang.String" itemvalue="Python.download_img" />
+        <item index="1" class="java.lang.String" itemvalue="Python.lianjia_zufang" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lianjia" />
+        <item index="3" class="java.lang.String" itemvalue="Python.connecMysql" />
+        <item index="4" class="java.lang.String" itemvalue="Python.beautifulSoup" />
       </list>
     </recent_temporary>
   </component>
@@ -314,17 +270,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -362,28 +319,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/douban.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PIL_study/ImageChops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connecMysql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
           <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -398,9 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -415,7 +351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
           <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,9 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,71 +547,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4599">
           <caret line="0" column="1480" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="79299" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lianjia.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="0" column="22246" lean-forward="false" selection-start-line="0" selection-start-column="22246" selection-end-line="0" selection-end-column="22246" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lianjia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htmlParse_study/beautifulSoup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htmlParse_study/spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="105" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lianjia.json" />
+    <entry file="file://$PROJECT_DIR$/lianjia.py" />
     <entry file="file://$PROJECT_DIR$/douban.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-351">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connecMysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htmlParse_study/lianjia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="73" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,6 +565,52 @@
           <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParse_study/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="105" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connecMysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParse_study/test.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParse_study/beautifulSoup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParse_study/download_img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="e#9#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParse_study/lianjia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="73" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
