@@ -1,7 +1,7 @@
 # 利用Pillow进行图片处理
 from PIL import Image, ImageFilter, ImageDraw, ImageFont, ImageChops
 
-im= Image.open('images/dog.jpg')
+im= Image.open('../images/dog.jpg')
 w, h = im.size
 print(im.filename, im.format, im.width, im.height, im.size, im.mode, im.palette, im.info)
 # If mode is “P”, palette should be an instance of the ImagePalette class. Otherwise, it should be set to None
@@ -11,52 +11,41 @@ print(im.filename, im.format, im.width, im.height, im.size, im.mode, im.palette,
 print(im.split())
 print(im.getchannel('R'))
 print(im.tell())
-# Image.rotate(angle, resample=0, expand=0, center=None, translate=None)
-im.rotate(45).save('pillowImages/rotate_dog.jpg', 'jpeg')            #旋转角度
-im.resize((200, 200)).save('pillowImages/resize  _dog.jpg', 'jpeg')  #重置大小
 
-
-im.transpose(Image.FLIP_LEFT_RIGHT).save('pillowImages/pos_dog.jpg', 'jpeg')    #左右调换
-im.transpose(Image.FLIP_TOP_BOTTOM).save('pillowImages/pos_top_dog.jpg', 'jpeg')    #上下颠倒
 # FLIP_LEFT_RIGHT FLIP_TOP_BOTTOM ROTATE_90 ROTATE_180 ROTATE_270 TRANSPOSE TRANSVERSE
-
-
 
 # 2.ImageFilter模块
 
-im.thumbnail((w//2, h//2))    #缩放图片
-im.save('pillowImages/thumb_dog.jpg', 'jpeg')
-
-image = Image.open('images/dog.jpg')    #模糊图片
+image = Image.open('../images/dog.jpg')    #模糊图片
 im2 = image.filter(ImageFilter.BLUR)
-im2.save('pillowImages/blur_dog.jpg', 'jpeg')
+im2.save('../pillowImages/blur_dog.jpg', 'jpeg')
 
 im3 = image.filter(ImageFilter.DETAIL)  #图片增强滤镜
-im3.save('pillowImages/detail_dog.jpg', 'jpeg')
+im3.save('../pillowImages/detail_dog.jpg', 'jpeg')
 
 im4 = image.filter(ImageFilter.EDGE_ENHANCE)    #图像边缘增强
-im4.save('pillowImages/edge_dog.jpg', 'jpeg')
+im4.save('../pillowImages/edge_dog.jpg', 'jpeg')
 
 im5 = image.filter(ImageFilter.SMOOTH)          #平滑
-im5.save('pillowImages/smooth_dog.jpg', 'jpeg')
+im5.save('../pillowImages/smooth_dog.jpg', 'jpeg')
 
 im6 = image.filter(ImageFilter.SHARPEN)
-im6.save('pillowImages/sharpen_dog.jpg', 'jpeg')    # 锐化
+im6.save('../pillowImages/sharpen_dog.jpg', 'jpeg')    # 锐化
 
 im7 = image.filter(ImageFilter.EMBOSS)
-im7.save('pillowImages/emboss_dog.jpg', 'jpeg')    # 浮雕
+im7.save('../pillowImages/emboss_dog.jpg', 'jpeg')    # 浮雕
 
 im8 = image.filter(ImageFilter.CONTOUR)             #轮廓
-im8.save('pillowImages/contour_dog.jpg', 'jpeg')
+im8.save('../pillowImages/contour_dog.jpg', 'jpeg')
 
 im9 = image.filter(ImageFilter.FIND_EDGES)             #
-im9.save('pillowImages/find_edge_dog.jpg', 'jpeg')
+im9.save('../pillowImages/find_edge_dog.jpg', 'jpeg')
 
 im10 = image.filter(ImageFilter.EDGE_ENHANCE_MORE)             #
-im10.save('pillowImages/edge_more_dog.jpg', 'jpeg')
+im10.save('../pillowImages/edge_more_dog.jpg', 'jpeg')
 
 # 3.ImageDraw模块
-imd = Image.open('images/star.jpg')
+imd = Image.open('../images/star.jpg')
 draw = ImageDraw.Draw(imd)
 
 draw.line((0, 0) + imd.size, fill=128)                  #划线
@@ -76,15 +65,13 @@ draw.ink = 255 + 0 * 256 + 0 * 256 * 256       #红色(画笔颜色)
 
 fontsize = ImageFont.truetype("C:\Windows\Fonts\Arial.ttf", 36)
 draw.text([100, 240], 'a beautiful girl', font=fontsize)
-imd.save('pillowImages/star.jpg', "jpeg")
+imd.save('../pillowImages/star.jpg', "jpeg")
 
 # 透明度文字
-opcityImg = Image.open('images/star.jpg').convert('RGBA')
+opcityImg = Image.open('../images/star.jpg').convert('RGBA')
 txt = Image.new('RGBA', opcityImg.size, (255, 255, 255, 0))
 d = ImageDraw.Draw(txt)
 d.text((100,10), "Hello", font=fontsize, fill=(255, 255, 255, 128))
 out = Image.alpha_composite(opcityImg, txt)
-out.save('pillowImages/star_opacity.jpg', "bmp")
-
-# 4.ImageChops(channel operations) 模块
+out.save('../pillowImages/star_opacity.jpg', "bmp")
 

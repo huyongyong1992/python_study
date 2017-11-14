@@ -2,7 +2,7 @@ from PIL import Image, ImageChops
 # 对图像的算术操作
 
 # 1.constant(image,value) ⇒ image 返回一个和给定图像尺寸一样的一层，该层被给定的像素值填充。
-im = Image.open('images/star2.jpg')
+im = Image.open('../images/star2.jpg')
 im.getpixel((0, 0))
 image = ImageChops.constant(im, 128)
 # image.show()
@@ -15,7 +15,7 @@ image = ImageChops.constant(im, 128)
 # ImageChops.invert(im).show()
 
 # 4.lighter(image1, image2) ⇒ image 逐像素比较，选择较大值作为新图像的像素值。
-im02 = Image.open('images/nature.jpg')
+im02 = Image.open('../images/nature.jpg')
 # ImageChops.lighter(im, im02).show()
 
 # 5.darker(image1,image2) ⇒ image
@@ -47,7 +47,7 @@ im02 = Image.open('images/nature.jpg')
 # ImageChops.composite(im, im02, g).show()
 # ImageChops.composite(im, im02, b).show()
 
-#13.offset(image,xoffset, yoffset) ⇒ image  返回一个图像数据按照变量offset做了偏移的图像。Datawraps around the edges.如果变量yoffset缺省，它被假设与变量xoffset一样。
-#ImageChops.offset(im02, 100).show()
+# 13.offset(image,xoffset, yoffset) ⇒ image  返回一个图像数据按照变量offset做了偏移的图像。Datawraps around the edges.如果变量yoffset缺省，它被假设与变量xoffset一样。
+# ImageChops.offset(im02, 100).show()
 
 

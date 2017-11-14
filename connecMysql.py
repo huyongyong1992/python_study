@@ -9,26 +9,33 @@ cursor = db.cursor()
 def insert_database():
     # 插入之前查询此人是否存在数据库中
     try:
-        select_sql = "SELECT * FROM python_user WHERE FIRST_NAME = '%s' " % ('Mbc')
+        select_sql = "SELECT * FROM python_user WHERE FIRST_NAME = '%s' " % ('Yong')
         cursor.execute(select_sql)
         rs = cursor.fetchall()
         if rs:
             print('this person exsited')
         else:
             print('No this person')
-            sql = """INSERT INTO python_user(FIRST_NAME,LAST_NAME, AGE, SEX, INCOME) VALUES ('Mbc', 'Young', 26, 'F', 5000)"""
+            sql = """INSERT INTO python_user(FIRST_NAME,LAST_NAME, AGE, SEX, INCOME) VALUES ('Mbc', 'Yong', 26, 'F', 5000)"""
             execute_def(sql)
     except:
         print('error')
 
 # 创建数据库
 def create_database():
-    sql = """CREATE TABLE IF NOT EXISTS TEST(
+    sql = """CREATE TABLE IF NOT EXISTS lianjiaershouhouse(
              id INT NOT NULL AUTO_INCREMENT,
-             NAME CHAR(20),
-             AGE INT , 
-             ADDRESS CHAR(20), 
-             COMPONY CHAR(20),
+             html CHAR(255),
+             imgUrl CHAR(255) , 
+             title CHAR(255), 
+             houseInfo CHAR(255),
+             buildTime CHAR(255),
+             address CHAR(255),
+             followInfo CHAR(255),
+             suway CHAR(255),
+             buyTime CHAR(255),
+             totalPrice CHAR(255),
+             unitPrice CHAR(255),
              PRIMARY KEY(id))"""
     execute_def(sql)
 # 删除数据库中的数据
@@ -65,4 +72,4 @@ def execute_def(sql):
         print('error')
         db.rollback()
 if __name__ == '__main__':
-    insert_database()
+    create_database()
