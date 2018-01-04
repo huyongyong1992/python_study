@@ -28,20 +28,12 @@ def create_database():
              see_people CHAR(255),
              PRIMARY KEY(id))"""
     execute_def(sql)
-
 def execute_def(sql):
-
     try:
-        # 执行sql语句
         cursor.execute(sql)
-        # 提交到数据库执行
         db.commit()
     except:
-        # 如果发生错误则回滚
-        print('error')
         db.rollback()
-
-
 def download_html(url):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
@@ -61,7 +53,15 @@ def main():
         print(url)
         html = download_html(url)
         soup = BeautifulSoup(html, 'html.parser')
-        list = soup.find('ul', class_='house-lst')
+        list = soup.find('ul', class_='house-lst') #class是关键字  ,或写为soup.find('ul', {'class':'house-lst'})
+        # find_all(tag,attributes,recursive,text,limit,keywords)
+        # find(tag,attributes,recursive,text,limit,keywords)
+        # tag:标签名或标签名列表 eg:  'h1' or {'h1','h2'}
+        # attributes:属性和属性值对 eg: {'class','class1'} or {'class',{'class2',}}
+        # recursive:递归参数（boolean,默认为true） true会去查找该标签的所有子标签，false只查找文档的一级标签
+        # text:用标签的文本去匹配 eg: bs.find_all(text="text1")
+        # limit: find相当于find_all limit 为1的情形(取前limit项)
+        # keywords: 选择那些具有指定属性的标签  eg: bs.find_all(id="id1")
         for li in list.find_all('li'):
             detail_html = li.find('div', attrs={'class', 'pic-panel'}).find('a').get('href')
             imgUrl = li.find('img').get('data-img')
